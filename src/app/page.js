@@ -23,15 +23,18 @@ export default function Home() {
         <div className="bg-blue-700 p-16 flex flex-col justify-center">
           <h2 className="text-3xl font-bold text-white mb-4">Nuestra Visión</h2>
           <p className="text-blue-100 text-lg leading-relaxed">
-            Ser una iglesia que transforma vidas a través del amor de Dios, 
-            llevando esperanza y restauración a cada familia de nuestra comunidad.
+            “Ser una iglesia cristiana evangélica sólida y guiada por el Espíritu Santo, dedicada a
+            transformar vidas mediante el poder del Evangelio de Jesucristo, formando
+            discípulos comprometidos que impacten la familia, la comunidad y las naciones para
+            la gloria de Dios.”
           </p>
         </div>
         <div className="bg-[#0a1f44] p-16 flex flex-col justify-center">
           <h2 className="text-3xl font-bold text-white mb-4">Nuestra Misión</h2>
           <p className="text-blue-100 text-lg leading-relaxed">
-            Discipular a cada persona en los principios del reino de Dios, 
-            formando creyentes comprometidos con la Palabra y el servicio.
+            “Predicar el Evangelio de Jesucristo, enseñar la Palabra de Dios, formar discípulos,
+            fortalecer a las familias y servir con amor a la comunidad, promoviendo una vida de
+            fe, santidad y servicio bajo la dirección del Espíritu Santo.”
           </p>
         </div>
       </section>
