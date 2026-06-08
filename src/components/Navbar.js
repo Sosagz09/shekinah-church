@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-8 py-5 bg-[#0a1628]">
+    <nav className="flex items-center justify-between px-8 py-5 bg-[#0a1628] sticky top-0 z-50">
       <Link href="/">
         <Image
           src="/logo shekinah.png"
