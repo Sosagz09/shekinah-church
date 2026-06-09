@@ -65,7 +65,7 @@ export default function Nosotros() {
             <div className="bg-blue-700 text-white font-bold text-xl px-6 py-2 rounded-full">2026</div>
             <h3 className="text-white font-bold text-xl">Hoy</h3>
             <p className="text-blue-200 text-sm leading-relaxed">
-              Hoy somos una iglesia con 4 ministerios activos 
+              Hoy somos una iglesia con 12 ministerios activos 
               y una comunidad creciente unida por el amor de Dios. 
             </p>
           </div>
@@ -101,7 +101,7 @@ export default function Nosotros() {
             <p className="text-white font-medium">Años de ministerio</p>
           </div>
           <div>
-            <p className="text-5xl font-bold text-blue-400 mb-2">4</p>
+            <p className="text-5xl font-bold text-blue-400 mb-2">12</p>
             <p className="text-white font-medium">Ministerios activos</p>
           </div>
           <div>

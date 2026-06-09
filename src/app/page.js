@@ -13,7 +13,7 @@ export default function Home() {
         <p className="text-xl text-blue-300 mb-8">
           Isaías 35
         </p>
-        <a href="/servicios" className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-full transition-colors text-lg">
+        <a href="/soy-nuevo" className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-full transition-colors text-lg">
           Únete a nosotros
         </a>
       </section>
