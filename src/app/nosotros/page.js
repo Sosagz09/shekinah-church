@@ -27,7 +27,7 @@ export default function Nosotros() {
               <h3 className="text-3xl font-bold text-white mb-1">Pastor Carlos Armando Rivas</h3>
               <p className="text-blue-400 font-medium mb-4">Pastor Principal</p>
               <p className="text-blue-200 leading-relaxed">
-                Hombre de fe y visión, el Pastor Carlos ha dedicado su vida a guiar a su congregación 
+                Hombre de fe y visión, el Pastor Armando ha dedicado su vida a guiar a su congregación 
                 en los caminos de Dios, con un corazón apasionado por ver vidas transformadas 
                 por el poder del Espíritu Santo.
               </p>
