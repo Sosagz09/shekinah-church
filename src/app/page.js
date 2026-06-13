@@ -83,7 +83,7 @@ export default function Home() {
 
           {/* Logo y ubicacion */}
           <div className="flex flex-col gap-4">
-            <img src="/logo shekinah.png" alt="Logo" className="w-20" />
+            <img src="/logo shekinah.PNG" alt="Logo" className="w-20" />
             <p className="text-blue-200 text-sm leading-relaxed">
               Casa de Dios Shekinah — Isaías 35
             </p>
