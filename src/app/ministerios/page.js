@@ -11,7 +11,7 @@ export default function Ministerios() {
     {
       titulo: "Gracia y Sabiduría",
       horario: "Jueves — 6:00 PM",
-      icono: "M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z",
+      icono: "M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z",
       desc: "Un ministerio enfocado en la enseñanza profunda de la Palabra de Dios, formando creyentes maduros que vivan con sabiduría y gracia en cada área de su vida.",
     },
     {
@@ -28,17 +28,17 @@ export default function Ministerios() {
     },
     {
       titulo: "Multimedia",
-      icono: "M21 3H3c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h5v2h8v-2h5c1.1 0 2-.89 2-2V5c0-1.11-.9-2-2-2zm0 14H3V5h18v12z",
+      icono: "M4 6h16v10H4V6zm16-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h4l-2 2v1h12v-1l-2-2h4c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-9 9l5-3-5-3v6z",
       desc: "Utiliza la tecnología audiovisual y digital para llevar el evangelio más allá de las paredes de la iglesia: proyección de alabanzas y prédicas, transmisiones en vivo, grabación de mensajes y elaboración de anuncios y contenido para mantener informada a la comunidad.",
     },
     {
       titulo: "Escuelita Bíblica",
-      icono: "M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z",
+      icono: "M12 2C9.79 2 8 3.79 8 6s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-3.31 0-6 1.79-6 4v2h12v-2c0-2.21-2.69-4-6-4zm-7-3.5c.83 0 1.5-.67 1.5-1.5S5.83 5.5 5 5.5 3.5 6.17 3.5 7 4.17 8.5 5 8.5zm1.5 1.5c-1.4 0-4.5.7-4.5 2.5V14h4v-1.5c0-.66.16-1.55.5-2.5zm12.5-1.5c.83 0 1.5-.67 1.5-1.5S19.83 5.5 19 5.5 17.5 6.17 17.5 7s.67 1.5 1.5 1.5zM24 14v-1.5c0-1.8-3.1-2.5-4.5-2.5.34.95.5 1.84.5 2.5V14h4z",
       desc: "Un espacio vital diseñado para guiar a los más pequeños en su crecimiento espiritual, enseñándoles las Escrituras de manera adecuada a su edad, formando su carácter y desarrollando los talentos que Dios les ha dado.",
     },
     {
       titulo: "Misiones",
-      icono: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z",
+      icono: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z",
       desc: "Lleva a cabo la Gran Comisión extendiendo el Reino de Dios a través del envío y sostén de misioneros, ayuda humanitaria, evangelismo local e intercesión por los pueblos no alcanzados.",
     },
     {
@@ -53,22 +53,22 @@ export default function Ministerios() {
     },
     {
       titulo: "Servidores",
-      icono: "M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A2.984 2.984 0 0 0 17.06 6.5c-.74 0-1.38.38-1.76.95l-1.36 2.05c-.32.5-.32 1.14 0 1.64L15.5 14H18v8h2zM12.5 11.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5-1.5.67-1.5 1.5.67 1.5 1.5 1.5zM5.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2zm2 16v-7H9V9.5C9 8.12 7.88 7 6.5 7h-2C3.12 7 2 8.12 2 9.5V15h1.5v7h4z",
+      icono: "M11 9H9V2H7v7H5V2H3v7c0 2.12 1.66 3.84 3.75 3.97V22h2.5v-9.03C11.34 12.84 13 11.12 13 9V2h-2v7zm5-3v8h2.5v8H21V2c-2.76 0-5 2.24-5 4z",
       desc: "Facilita el desarrollo ordenado de los servicios siendo la primera cara visible de la iglesia: dan la bienvenida, ayudan con la acomodación, gestionan las ofrendas y diezmos, y velan por el orden y la preparación del espacio.",
     },
     {
       titulo: "Iglesia en la Calle",
-      icono: "M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z",
+      icono: "M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zM4 18V8h16v10H4zm2-7h2v2H6v-2zm0 4h8v2H6v-2zm10-4h2v2h-2v-2z",
       desc: "Conocido como evangelismo callejero, lleva el mensaje de salvación fuera de las paredes del templo: proclama el evangelio, brinda ayuda práctica a personas vulnerables y conecta a quienes lo necesitan con la congregación.",
     },
     {
       titulo: "Evangelismo",
-      icono: "M12 2L1 21h22L12 2zm0 3.84L18.93 19H5.07L12 5.84zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z",
+      icono: "M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-1 14.5l-3.5-3.5 1.41-1.41L11 12.67l4.59-4.59L17 9.5 11 15.5z",
       desc: "Proclama el evangelio de Jesucristo y extiende el mensaje de salvación a quienes no conocen a Dios, capacitando a los miembros para compartir su fe y dando seguimiento a quienes deciden seguir a Cristo.",
     },
     {
       titulo: "Conservación de Frutos",
-      icono: "M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z",
+      icono: "M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5c0 1.61.92 3.4 2.39 4.65C5.55 14.42 8.6 9.65 17 8z",
       desc: "Su función es retener y discipular a los nuevos creyentes que llegan a la congregación, dándoles seguimiento, enseñándoles los principios básicos de la fe y ayudándolos a integrarse plenamente a la vida de la iglesia.",
     },
   ];
