@@ -1,4 +1,6 @@
 import Navbar from "@/components/Navbar";
+import Carrusel from "@/components/Carrusel";
+
 
 export default function Home() {
   return (
@@ -17,6 +19,9 @@ export default function Home() {
           Únete a nosotros
         </a>
       </section>
+
+         {/* Carrusel de fotos */}
+      <Carrusel />
 
       {/* Visión y Misión */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-0">
