@@ -1,45 +1,31 @@
 import Navbar from "@/components/Navbar";
-import Carrusel from "@/components/Carrusel";
-
+import HeroCarrusel from "@/components/HeroCarrusel";
 
 export default function Home() {
   return (
     <main className="bg-[#060d1a] min-h-screen">
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="flex flex-col items-center justify-center text-center py-40 px-8 bg-gradient-to-b from-[#0a1628] to-[#060d1a]">
-        <h1 className="text-5xl font-bold text-white mb-4">
-          Bienvenido a Casa de Dios Shekinah
-        </h1>
-        <p className="text-xl text-blue-300 mb-8">
-          Isaías 35
-        </p>
-        <a href="/soy-nuevo" className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-4 rounded-full transition-colors text-lg">
-          Únete a nosotros
-        </a>
-      </section>
-
-         {/* Carrusel de fotos */}
-      <Carrusel />
+      {/* Hero con carrusel de fondo */}
+      <HeroCarrusel />
 
       {/* Visión y Misión */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-0">
         <div className="bg-blue-700 p-16 flex flex-col justify-center">
           <h2 className="text-3xl font-bold text-white mb-4">Nuestra Visión</h2>
           <p className="text-blue-100 text-lg leading-relaxed">
-            “Ser una iglesia cristiana evangélica sólida y guiada por el Espíritu Santo, dedicada a
+            "Ser una iglesia cristiana evangélica sólida y guiada por el Espíritu Santo, dedicada a
             transformar vidas mediante el poder del Evangelio de Jesucristo, formando
             discípulos comprometidos que impacten la familia, la comunidad y las naciones para
-            la gloria de Dios.”
+            la gloria de Dios."
           </p>
         </div>
         <div className="bg-[#0a1f44] p-16 flex flex-col justify-center">
           <h2 className="text-3xl font-bold text-white mb-4">Nuestra Misión</h2>
           <p className="text-blue-100 text-lg leading-relaxed">
-            “Predicar el Evangelio de Jesucristo, enseñar la Palabra de Dios, formar discípulos,
+            "Predicar el Evangelio de Jesucristo, enseñar la Palabra de Dios, formar discípulos,
             fortalecer a las familias y servir con amor a la comunidad, promoviendo una vida de
-            fe, santidad y servicio bajo la dirección del Espíritu Santo.”
+            fe, santidad y servicio bajo la dirección del Espíritu Santo."
           </p>
         </div>
       </section>
