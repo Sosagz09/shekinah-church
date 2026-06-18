@@ -1,26 +1,13 @@
 import Navbar from "@/components/Navbar";
+import { client } from "../../sanity/lib/client";
 
-export default function Mensajes() {
-  const videos = [
-    {
-      id: "1",
-      titulo: "¿Cómo te sientes Mamá?",
-      subtitulo: "Servicio General",
-      embedId: "0DAxX6CXa-Q",
-    },
-    {
-      id: "2",
-      titulo: "La Omnipotencia de Dios",
-      subtitulo: "Jueves de Enseñanza",
-      embedId: "U4Qc6TYf4dI",
-    },
-    {
-      id: "3",
-      titulo: "Amado deseo que seas prosperado",
-      subtitulo: "Servicio General",
-      embedId: "l4hdWhc6P4s",
-    },
-  ];
+export default async function Mensajes() {
+  const videos = await client.fetch(`*[_type == "sermon"] | order(fecha desc) {
+    _id,
+    titulo,
+    subtitulo,
+    youtubeId
+  }`);
 
   const reels = ["reel1.mp4", "reel2.mp4", "reel3.mp4", "reel4.mp4"];
 
@@ -28,7 +15,7 @@ export default function Mensajes() {
     <main className="bg-[#060d1a] min-h-screen">
       <Navbar />
 
-    {/* Hero */}
+      {/* Hero */}
       <section className="relative flex flex-col items-center justify-center text-center px-8 overflow-hidden" style={{ height: '500px' }}>
         <img src="/mensajes.png" alt="" className="absolute inset-0 w-full h-full object-cover z-0" />
         <div className="absolute inset-0 bg-[#060d1a]/75 z-10"></div>
@@ -50,26 +37,31 @@ export default function Mensajes() {
             <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
           </a>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {videos.map((video) => (
-            <div key={video.id} className="group">
-              <div className="relative w-full rounded-2xl overflow-hidden ring-1 ring-blue-900 group-hover:ring-blue-500 transition-all" style={{ paddingBottom: '56.25%' }}>
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src={`https://www.youtube.com/embed/${video.embedId}`}
-                  title={video.titulo}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+
+        {videos.length === 0 ? (
+          <p className="text-blue-300 text-center py-12">No hay sermones publicados aún.</p>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {videos.map((video) => (
+              <div key={video._id} className="group">
+                <div className="relative w-full rounded-2xl overflow-hidden ring-1 ring-blue-900 group-hover:ring-blue-500 transition-all" style={{ paddingBottom: '56.25%' }}>
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full"
+                    src={`https://www.youtube.com/embed/${video.youtubeId}`}
+                    title={video.titulo}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <div className="pt-4">
+                  <p className="text-blue-400 text-xs uppercase tracking-wide font-medium mb-1">{video.subtitulo}</p>
+                  <h3 className="text-white font-bold text-lg leading-snug group-hover:text-blue-300 transition-colors">{video.titulo}</h3>
+                </div>
               </div>
-              <div className="pt-4">
-                <p className="text-blue-400 text-xs uppercase tracking-wide font-medium mb-1">{video.subtitulo}</p>
-                <h3 className="text-white font-bold text-lg leading-snug group-hover:text-blue-300 transition-colors">{video.titulo}</h3>
-              </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        )}
       </section>
 
       {/* Reels */}
