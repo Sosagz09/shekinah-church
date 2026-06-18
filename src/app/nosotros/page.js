@@ -6,13 +6,17 @@ export default function Nosotros() {
     <main className="bg-[#060d1a] min-h-screen">
       <Navbar />
 
-      {/* Hero */}
-      <section className="flex flex-col items-center justify-center text-center py-24 px-8 bg-gradient-to-b from-[#0a1628] to-[#060d1a]">
-        <h1 className="text-5xl font-bold text-white mb-4">Nuestra Historia</h1>
-        <p className="text-blue-300 text-lg max-w-2xl">
-          Desde el 1 de mayo de 2017, Casa de Dios Shekinah ha sido un lugar de encuentro con Dios, 
-          transformando vidas en Cara Sucia, Ahuachapán y más allá.
-        </p>
+    {/* Hero */}
+      <section className="relative flex flex-col items-center justify-center text-center px-8 overflow-hidden" style={{ height: '500px' }}>
+        <img src="/nosotros.png" alt="" className="absolute inset-0 w-full h-full object-cover z-0" />
+        <div className="absolute inset-0 bg-[#060d1a]/75 z-10"></div>
+        <div className="relative z-20 flex flex-col items-center gap-4">
+          <p className="text-blue-400 text-sm uppercase tracking-widest font-medium">Casa de Dios Shekinah</p>
+          <h1 className="text-5xl font-bold text-white mb-2">Nuestra Historia</h1>
+          <p className="text-blue-300 text-xl max-w-2xl leading-relaxed">
+            Desde el 1 de mayo de 2017, Casa de Dios Shekinah ha sido un lugar de encuentro con Dios, transformando vidas en Cara Sucia, Ahuachapán y más allá.
+          </p>
+        </div>
       </section>
 
       {/* Pastores */}
