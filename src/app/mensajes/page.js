@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import { client } from "../../sanity/lib/client";
+export const revalidate = 60
 
 export default async function Mensajes() {
   const videos = await client.fetch(`*[_type == "sermon"] | order(fecha desc) {
