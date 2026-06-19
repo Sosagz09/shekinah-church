@@ -1,14 +1,18 @@
 import Navbar from "@/components/Navbar";
 import { client } from "../../sanity/lib/client";
+import { urlFor } from "../../sanity/lib/image";
+
 export const revalidate = 60
 
 export default async function Mensajes() {
-  const videos = await client.fetch(`*[_type == "sermon"] | order(fecha desc) {
-    _id,
-    titulo,
-    subtitulo,
-    youtubeId
-  }`);
+  const [videos, galeria] = await Promise.all([
+    client.fetch(`*[_type == "sermon"] | order(fecha desc) {
+      _id, titulo, subtitulo, youtubeId
+    }`),
+    client.fetch(`*[_type == "galeria"] | order(orden asc) {
+      _id, titulo, imagen, orden
+    }`)
+  ]);
 
   const reels = ["reel1.mp4", "reel2.mp4", "reel3.mp4", "reel4.mp4"];
 
@@ -87,35 +91,21 @@ export default async function Mensajes() {
       {/* Galería */}
       <section className="py-16 px-8 max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-white mb-10">Galería</h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden ring-1 ring-blue-900 hover:ring-blue-500 transition-all" style={{ aspectRatio: '1/1' }}>
-            <img src="/1.jpeg" alt="Foto 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+        {galeria.length === 0 ? (
+          <p className="text-blue-300 text-center py-12">No hay fotos en la galería aún.</p>
+        ) : (
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {galeria.map((foto) => (
+              <div key={foto._id} className="rounded-2xl overflow-hidden ring-1 ring-blue-900 hover:ring-blue-500 transition-all" style={{ aspectRatio: '1/1' }}>
+                <img
+                  src={urlFor(foto.imagen).width(600).height(600).fit('crop').url()}
+                  alt={foto.titulo || 'Foto galería'}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            ))}
           </div>
-          <div className="rounded-2xl overflow-hidden ring-1 ring-blue-900 hover:ring-blue-500 transition-all" style={{ aspectRatio: '1/1' }}>
-            <img src="/2.jpeg" alt="Foto 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div className="rounded-2xl overflow-hidden ring-1 ring-blue-900 hover:ring-blue-500 transition-all" style={{ aspectRatio: '1/1' }}>
-            <img src="/3.jpeg" alt="Foto 3" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div className="rounded-2xl overflow-hidden ring-1 ring-blue-900 hover:ring-blue-500 transition-all" style={{ aspectRatio: '1/1' }}>
-            <img src="/4.jpeg" alt="Foto 4" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div className="rounded-2xl overflow-hidden ring-1 ring-blue-900 hover:ring-blue-500 transition-all" style={{ aspectRatio: '1/1' }}>
-            <img src="/5.jpeg" alt="Foto 5" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div className="col-span-2 rounded-2xl overflow-hidden ring-1 ring-blue-900 hover:ring-blue-500 transition-all" style={{ aspectRatio: '2/1' }}>
-            <img src="/6.jpeg" alt="Foto 6" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div className="rounded-2xl overflow-hidden ring-1 ring-blue-900 hover:ring-blue-500 transition-all" style={{ aspectRatio: '1/1' }}>
-            <img src="/7.jpeg" alt="Foto 7" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div className="rounded-2xl overflow-hidden ring-1 ring-blue-900 hover:ring-blue-500 transition-all" style={{ aspectRatio: '1/1' }}>
-            <img src="/8.jpeg" alt="Foto 8" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-          </div>
-          <div className="col-span-2 rounded-2xl overflow-hidden ring-1 ring-blue-900 hover:ring-blue-500 transition-all" style={{ aspectRatio: '2/1' }}>
-            <img src="/9.jpeg" alt="Foto 9" className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
-          </div>
-        </div>
+        )}
       </section>
 
     </main>
