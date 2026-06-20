@@ -36,7 +36,7 @@ export default function Navbar() {
         <a href="/mensajes" className="text-white text-sm uppercase tracking-wide">Mensajes</a>
         <a href="/ministerios" className="text-white text-sm uppercase tracking-wide">Ministerios</a>
         <a href="/nosotros" className="text-white text-sm uppercase tracking-wide">Nosotros</a>
-        <a href="/eventos" className="hover:text-blue-400">Eventos</a>
+        <a href="/eventos" className="text-white text-sm uppercase tracking-wide">Eventos</a>
         <a href="/oracion" className="text-white text-sm uppercase tracking-wide">Oración</a>
       </div>
     </nav>
