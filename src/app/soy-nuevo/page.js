@@ -22,7 +22,7 @@ export default function SoyNuevo() {
 
       {/* Hero con imagen de fondo */}
       <div style={{ position: 'relative', height: '500px', overflow: 'hidden' }}>
-        <img src="/soynuevo.jpeg" alt="" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }} />
+        <img src="/soynuevo.webp" alt="" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }} />
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(6,13,26,0.72)', zIndex: 1 }}></div>
         <div style={{ position: 'relative', zIndex: 2, height: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '0 2rem' }}>
           <h1 className="text-5xl font-bold text-white leading-tight mb-4">

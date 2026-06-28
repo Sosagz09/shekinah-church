@@ -6,9 +6,9 @@ export default function Nosotros() {
     <main className="bg-[#060d1a] min-h-screen">
       <Navbar />
 
-    {/* Hero */}
+      {/* Hero */}
       <section className="relative flex flex-col items-center justify-center text-center px-8 overflow-hidden" style={{ height: '500px' }}>
-        <img src="/nosotros.png" alt="" className="absolute inset-0 w-full h-full object-cover z-0" />
+        <img src="/nosotros.webp" alt="" className="absolute inset-0 w-full h-full object-cover z-0" />
         <div className="absolute inset-0 bg-[#060d1a]/75 z-10"></div>
         <div className="relative z-20 flex flex-col items-center gap-4">
           <p className="text-blue-400 text-sm uppercase tracking-widest font-medium">Casa de Dios Shekinah</p>
@@ -24,7 +24,7 @@ export default function Nosotros() {
         <h2 className="text-4xl font-bold text-white text-center mb-16">Nuestros Pastores</h2>
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="w-full md:w-1/2">
-            <Image src="/pastores.jpeg" alt="Pastores Carlos y Yensi Rivas" width={700} height={500} className="rounded-2xl w-full object-cover shadow-2xl" />
+            <Image src="/pastores.webp" alt="Pastores Carlos y Yensi Rivas" width={700} height={500} className="rounded-2xl w-full object-cover shadow-2xl" />
           </div>
           <div className="w-full md:w-1/2 flex flex-col gap-6">
             <div>
@@ -53,7 +53,7 @@ export default function Nosotros() {
         <h2 className="text-4xl font-bold text-white text-center mb-16">Nuestra Trayectoria</h2>
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-8">
           <div className="flex-1 flex flex-col items-center text-center gap-4">
-            <Image src="/inicio.jpeg" alt="Inicios 2017" width={500} height={300} className="rounded-2xl w-full object-cover shadow-xl" />
+            <Image src="/inicio.webp" alt="Inicios 2017" width={500} height={300} className="rounded-2xl w-full object-cover shadow-xl" />
             <div className="bg-blue-700 text-white font-bold text-xl px-6 py-2 rounded-full">2017</div>
             <h3 className="text-white font-bold text-xl">Los Inicios</h3>
             <p className="text-blue-200 text-sm leading-relaxed">
@@ -65,7 +65,7 @@ export default function Nosotros() {
             <div className="hidden md:block w-16 h-1 bg-blue-600"></div>
           </div>
           <div className="flex-1 flex flex-col items-center text-center gap-4">
-            <Image src="/presente.jpeg" alt="Hoy 2026" width={500} height={300} className="rounded-2xl w-full object-cover shadow-xl" />
+            <Image src="/presente.webp" alt="Hoy 2026" width={500} height={300} className="rounded-2xl w-full object-cover shadow-xl" />
             <div className="bg-blue-700 text-white font-bold text-xl px-6 py-2 rounded-full">2026</div>
             <h3 className="text-white font-bold text-xl">Hoy</h3>
             <p className="text-blue-200 text-sm leading-relaxed">

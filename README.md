@@ -1,6 +1,6 @@
 # Casa de Dios Shekinah — Sitio Web Oficial
 
-Sitio web oficial de la Iglesia **Casa de Dios Shekinah**, iglesia cristiana evangélica ubicada en Cantón Cara Sucia, Ahuachapán, El Salvador. Isaías 35.
+Sitio web oficial de la Iglesia **Casa de Dios Shekinah**, iglesia cristiana evangélica ubicada en Cantón Cara Sucia, Ahuachapán, El Salvador.
 
 **[casadediosshekinah.vercel.app](https://casadediosshekinah.vercel.app)**
 

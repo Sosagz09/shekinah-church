@@ -19,7 +19,7 @@ export default function HeroCarrusel() {
       {fotos.map((num, i) => (
         <img
           key={num}
-          src={`/${num}.jpeg`}
+          src={`/${num}.webp`}
           alt={`Foto ${num}`}
           className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 z-0"
           style={{ opacity: i === actual ? 1 : 0 }}

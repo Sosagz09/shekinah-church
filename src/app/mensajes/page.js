@@ -22,13 +22,13 @@ export default async function Mensajes() {
 
       {/* Hero */}
       <section className="relative flex flex-col items-center justify-center text-center px-8 overflow-hidden" style={{ height: '500px' }}>
-        <img src="/mensajes.png" alt="" className="absolute inset-0 w-full h-full object-cover z-0" />
+        <img src="/mensajes.webp" alt="" className="absolute inset-0 w-full h-full object-cover z-0" />
         <div className="absolute inset-0 bg-[#060d1a]/75 z-10"></div>
         <div className="relative z-20 flex flex-col items-center gap-4">
           <p className="text-blue-400 text-sm uppercase tracking-widest font-medium">Casa de Dios Shekinah</p>
           <h1 className="text-6xl font-bold text-white mb-2">Mensajes</h1>
           <p className="text-blue-300 text-xl max-w-2xl leading-relaxed">
-            Deja que la Palabra de Dios transforme tu vida. Escucha nuestras enseñanzas cuando quieras, donde quieras.
+            Deja que la Palabra de Dios transforme tu vida. Mira nuestro contenido cuando quieras, donde quieras.
           </p>
         </div>
       </section>

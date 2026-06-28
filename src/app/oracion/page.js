@@ -33,7 +33,7 @@ export default function Oracion() {
 
       {/* Hero con imagen de fondo */}
       <section className="relative flex flex-col items-center justify-center text-center px-8 overflow-hidden" style={{ height: '500px' }}>
-        <img src="/oracion.png" alt="" className="absolute inset-0 w-full h-full object-cover z-0" />
+        <img src="/oracion.webp" alt="" className="absolute inset-0 w-full h-full object-cover z-0" />
         <div className="absolute inset-0 bg-[#060d1a]/75 z-10"></div>
         <div className="relative z-20 flex flex-col items-center gap-4">
           <p className="text-blue-400 text-sm uppercase tracking-widest font-medium">Casa de Dios Shekinah</p>
