@@ -12,11 +12,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Casa de Dios Shekinah - Isaías 35",
-  description: "Casa de Dios Shekinah, iglesia cristiana evangélica en Cantón Cara Sucia, Ahuachapán, El Salvador. Servicios, mensajes, oración y más. Isaías 35.",
+  title: "Casa de Dios Shekinah",
+  description: "Casa de Dios Shekinah, iglesia cristiana evangélica en Cantón Cara Sucia, Ahuachapán, El Salvador. Servicios, mensajes, oración y más.",
   keywords: ["Casa de Dios Shekinah", "iglesia", "Ahuachapán", "Cara Sucia", "El Salvador", "iglesia cristiana", "Isaías 35"],
   openGraph: {
-    title: "Casa de Dios Shekinah - Isaías 35",
+    title: "Casa de Dios Shekinah",
     description: "Iglesia cristiana evangélica en Cantón Cara Sucia, Ahuachapán, El Salvador.",
     url: "https://casadediosshekinah.vercel.app",
     siteName: "Casa de Dios Shekinah",
