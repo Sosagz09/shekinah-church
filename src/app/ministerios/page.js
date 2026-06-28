@@ -4,28 +4,19 @@ export default function Ministerios() {
   const ministerios = [
     {
       titulo: "Familias en Conexiones de Fe",
-      horario: "Martes — 6:00 PM",
       icono: "M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z",
       desc: "Un espacio dedicado al fortalecimiento de la familia como base de la sociedad y la iglesia. Aquí las familias se conectan, crecen juntas y edifican su hogar sobre los principios de Dios.",
     },
     {
       titulo: "Gracia y Sabiduría",
-      horario: "Jueves — 6:00 PM",
       icono: "M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z",
       desc: "Un ministerio enfocado en la enseñanza profunda de la Palabra de Dios, formando creyentes maduros que vivan con sabiduría y gracia en cada área de su vida.",
     },
     {
       titulo: "Generación de Fuego",
-      horario: "Sábado — 6:00 PM",
       icono: "M13.5 0.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5 0.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z",
       desc: "El ministerio de jóvenes de Casa de Dios Shekinah. Un lugar donde la juventud encuentra su propósito, adora con pasión y es equipada para impactar su generación.",
-    },
-    {
-      titulo: "Servicio General",
-      horario: "Domingo — 9:00 AM",
-      icono: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z",
-      desc: "Nuestro culto principal donde toda la familia de Casa de Dios Shekinah se reúne para adorar, recibir la Palabra y crecer juntos en comunidad.",
-    },
+    },   
     {
       titulo: "Multimedia",
       icono: "M4 6h16v10H4V6zm16-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h4l-2 2v1h12v-1l-2-2h4c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-9 9l5-3-5-3v6z",
